@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+.gs-regular  { font-family: 'Google Sans', sans-serif; font-weight: 400; }
+.gs-medium   { font-family: 'Google Sans', sans-serif; font-weight: 500; }
+.gs-bold     { font-family: 'Google Sans', sans-serif; font-weight: 700; }
+.gs-italic   { font-family: 'Google Sans', sans-serif; font-style: italic; }
+.gs-bold-italic { font-family: 'Google Sans', sans-serif; font-weight: 700; font-style: italic; }
+
+.jb-regular  { font-family: 'JetBrains Mono', sans-serif; font-weight: 400; }
+.jb-medium   { font-family: 'JetBrains Mono', sans-serif; font-weight: 500; }
+.jb-bold     { font-family: 'JetBrains Mono', sans-serif; font-weight: 700; }
+.jb-italic   { font-family: 'JetBrains Mono', sans-serif; font-style: italic; }
+.jb-bold-italic { font-family: 'JetBrains Mono', sans-serif; font-weight: 700; font-style: italic; }
+
