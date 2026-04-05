@@ -1,0 +1,71 @@
+/* ─── PRINT / SAVE-AS-PDF STYLES ─────────────────────────────── */
+@media print {
+    /* A4 page with comfortable margins, no browser header/footer */
+    @page {
+        size: A4 portrait;
+        margin: 15mm 16mm 13mm 16mm;
+    }
+
+    /* Force-print background colours & SVG fill colours */
+    *, *::before, *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    html, body {
+        width: 100%;
+        background: #fff !important;
+        font-size: 10.5pt;
+        line-height: 1.38;
+    }
+
+    /* Remove screen-only elements */
+    .no-print { display: none !important; }
+
+    /* Wrapper fills page width, no screen padding */
+    .resume-wrap {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Force cyan / blue on coloured elements */
+    .text-cyan-600, .text-cyan-700 { color: #0e7490 !important; }
+    .border-cyan-600, .border-cyan-700 { border-color: #0e7490 !important; }
+    .text-blue-600  { color: #2563eb !important; }
+    .text-gray-500  { color: #6b7280 !important; }
+    .text-gray-600  { color: #4b5563 !important; }
+    .text-gray-700  { color: #374151 !important; }
+
+    /* Pipe separators always visible */
+    .contact-sep { display: inline !important; color: #9ca3af !important; }
+
+    /* Section headings never orphaned at page bottom */
+    h2 { page-break-after: avoid; break-after: avoid; }
+
+    /* Keep project/entry blocks from splitting across pages */
+    .keep-together { page-break-inside: avoid; break-inside: avoid; }
+
+    /* Always horizontal in print – no mobile stacking */
+    .print-row {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: baseline !important;
+        gap: 4pt !important;
+    }
+
+    /* Tighten spacing so everything fits one A4 page */
+    .mt-5  { margin-top: 9pt  !important; }
+    .gap-5 { gap:       9pt  !important; }
+    .mb-3  { margin-bottom: 6pt !important; }
+    .mb-2  { margin-bottom: 4pt !important; }
+    .space-y-3 > * + * { margin-top: 5pt  !important; }
+    .space-y-1 > * + * { margin-top: 2pt  !important; }
+    .space-y-0\.5 > * + * { margin-top: 1pt !important; }
+    .ml-4  { margin-left: 12pt !important; }
+    .ml-5  { margin-left: 14pt !important; }
+
+    /* Links: inherit colour, keep underline */
+    a { color: inherit !important; text-decoration: underline; }
+}
