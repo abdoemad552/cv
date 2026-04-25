@@ -8,6 +8,7 @@
     <link href="./css/fonts.css" rel="stylesheet">
     <link href="./css/tailwind.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/color-toolbar.css" rel="stylesheet">
 </head>
 <body class="bg-white text-gray-900 text-[13px] leading-snug gs-regular">
 
@@ -201,7 +202,7 @@
     </div>
 
     <!-- ── EXTRACURRICULAR ── -->
-    <div class="mt-5 pb-6">
+    <div class="mt-5">
         <h2 class="text-sm font-bold uppercase border-b border-cyan-700 pb-0.5 mb-2 tracking-widest text-cyan-700">
             Extracurricular Activities
         </h2>
@@ -215,6 +216,26 @@
             <li>Created problems for programming contests as a problem setter.</li>
         </ul>
     </div>
+
+    <!-- ── LANGUAGES ── -->
+    <div class="mt-5 pb-6">
+        <h2 class="text-sm font-bold uppercase border-b border-cyan-700 pb-0.5 mb-2 tracking-widest text-cyan-700">
+            Languages
+        </h2>
+        <ul class="list-disc ml-6 text-gray-700">
+            <li><span class="font-bold text-gray-900">Arabic:</span> Native</li>
+            <li><span class="font-bold text-gray-900">English:</span> Fluent</li>
+        </ul>
+    </div>
+
+    <!-- ── COLOR TOOLBAR ── -->
+    <div id="color-toolbar">
+        <label>🎨 Theme</label>
+        <div style="display:flex;gap:6px;align-items:center;" id="presets"></div>
+        <input type="color" id="color-picker" value="#0e7490" title="Pick custom color">
+    </div>
 </div>
+<script src="/jquery/jquery.js"></script>
+<script src="/js/color-scheme.js"></script>
 </body>
 </html>
