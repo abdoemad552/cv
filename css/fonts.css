@@ -13,3 +13,8 @@
 .jb-italic   { font-family: 'JetBrains Mono', sans-serif; font-style: italic; }
 .jb-bold-italic { font-family: 'JetBrains Mono', sans-serif; font-weight: 700; font-style: italic; }
 
+.lm-roman-regular  { font-family: 'LM Roman 10', sans-serif; font-weight: 400; }
+.lm-roman-medium   { font-family: 'LM Roman 10', sans-serif; font-weight: 500; }
+.lm-roman-bold     { font-family: 'LM Roman 10', sans-serif; font-weight: 700; }
+.lm-roman-italic   { font-family: 'LM Roman 10', sans-serif; font-style: italic; }
+.lm-roman-bold-italic { font-family: 'LM Roman 10', sans-serif; font-weight: 700; font-style: italic; }

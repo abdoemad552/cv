@@ -15,8 +15,11 @@
     html, body {
         width: 100%;
         background: #fff !important;
-        font-size: 10.5pt;
         line-height: 1.38;
+    }
+
+    * {
+        font-size: 8.8pt;
     }
 
     /* Remove screen-only elements */
